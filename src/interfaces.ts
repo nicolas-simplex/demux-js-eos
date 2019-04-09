@@ -14,6 +14,11 @@ export interface StateHistoryPostgresActionReaderOptions extends ActionReaderOpt
   dbSchema?: string
 }
 
+export interface StateHistoryWsActionReaderOptions extends ActionReaderOptions {
+  nodeosRPCEndpoint: string,
+  nodeosWSEndpoint: string,
+}
+
 export interface EosAuthorization {
   actor: string
   permission: string
